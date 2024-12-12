@@ -7,4 +7,4 @@ yearly_savings = monthly_savings * (12 + 12 * 0.05)
 
 print(f"Your monthly savings are ${monthly_savings}.")
 
-print(f"Projected savings after one year, with nterest, is: ${int(yearly_savings)}.")
+print(f"Projected savings after one year, with nterest, is: ${(yearly_savings)}.")
