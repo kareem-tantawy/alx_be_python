@@ -1,6 +1,6 @@
 # Weather app to apply on conditions
 
-weather = input("What's the weather like today? (sunny/rainy/cold):")
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
 if weather == "sunny":
     print(f"Wear a t-shirt and sunglasses.")
