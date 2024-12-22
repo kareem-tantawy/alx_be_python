@@ -6,13 +6,13 @@ num2 = int(input("Enter the second number: "))
 operatrion = input("Choose the operation (+, -, *, /): ")
 
 match operatrion:
-    case "+":
+    case '+':
         print(f"The result is: {num1 + num2}.")
-    case "-":
+    case '-':
         print(f"The result is: {num1 - num2}.")
-    case "*":
+    case '*':
         print(f"The result is: {num1 * num2}.")
-    case "/":
+    case '/':
         if num2 == 0:
             print("Cannot divide by zero.")
         else:
