@@ -10,7 +10,7 @@ def convert_to_celsius(fahrenheit):
 
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5 * celsius + 32
+    CELSIUS_TO_FAHRENHEIT_FACTOR *= 9 / 5
     return CELSIUS_TO_FAHRENHEIT_FACTOR
 
     """Enter the temperature to convert: 100
