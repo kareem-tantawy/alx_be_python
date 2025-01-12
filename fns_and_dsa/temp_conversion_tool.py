@@ -1,5 +1,6 @@
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+
 
 def convert_to_celsius(fahrenheit):
 
@@ -11,6 +12,7 @@ def convert_to_fahrenheit(celsius):
 
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
+
 
 def main():
 
@@ -39,7 +41,11 @@ def main():
             break
 
         except ValueError as e:
-            print(f"Error: {e}")
+            # Check for specific error message related to non-numeric input
+            if "could not convert string to float" in str(e):
+                print("Invalid temperature. Please enter a numeric value.")
+            else:
+                print(f"Error: {e}")  # Handle other potential ValueErrors
 
 
 if __name__ == "__main__":
