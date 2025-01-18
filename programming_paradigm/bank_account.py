@@ -17,6 +17,6 @@ class BankAccount:
         print(f"Current Balance: {self.__amount}")
 
 
-bank = BankAccount(100)
-bank.withdraw(150)
-bank.display_balance()
+# bank = BankAccount(100)
+# bank.withdraw(150)
+# bank.display_balance()
