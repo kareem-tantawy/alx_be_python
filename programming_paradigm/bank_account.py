@@ -1,4 +1,6 @@
 class BankAccount:
+    __amount = 0
+
     def __init__(self, amount):
         self.__amount = amount
 
