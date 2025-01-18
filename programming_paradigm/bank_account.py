@@ -14,7 +14,7 @@ class BankAccount:
         #     print("Insufficient funds.")
 
     def display_balance(self):
-        print(f"Current Balance: {self.__amount}")
+        print(f"Current Balance: ${float(self.__amount):.2f}")
 
 
 # bank = BankAccount(100)
