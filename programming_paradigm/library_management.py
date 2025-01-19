@@ -69,7 +69,6 @@ class Library:
         try:
             if self.check_book_status(book_name):
                 self.get_book(book_name).change_book_status(False)
-                print("Success")
             elif self.check_if_book_exists(book_name):
                 print(f"Sorry, this book still in the repository")
             else:
@@ -79,3 +78,8 @@ class Library:
             print(f"Error: {ve}")
         except AttributeError as ae:
             print(f"Error: {ae}")
+
+    def list_available_books(self):
+        for book in self._books:
+            if not book.get_status():
+                print(f"{book.title} by {book.author}")
